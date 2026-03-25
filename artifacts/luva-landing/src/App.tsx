@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { Switch, Route, Router as WouterRouter } from "wouter";
 import "./index.css";
 import ClaudeExtension from "./pages/ClaudeExtension";
+import ListaViral from "./pages/ListaViral";
 
 function Home() {
   useEffect(() => {
@@ -226,7 +227,7 @@ function Home() {
               </div>
             </div>
 
-            <a className="cta reveal" href="https://luvadeaplicativo.com/listaviral" target="_blank" rel="noopener noreferrer">
+            <a className="cta reveal" href="/listaviral/">
               entrar no listaviral
             </a>
           </div>
@@ -300,6 +301,8 @@ export default function App() {
       <Switch>
         <Route path="/claudeextension/" component={ClaudeExtension} />
         <Route path="/claudeextension" component={ClaudeExtension} />
+        <Route path="/listaviral/" component={ListaViral} />
+        <Route path="/listaviral" component={ListaViral} />
         <Route component={Home} />
       </Switch>
     </WouterRouter>
