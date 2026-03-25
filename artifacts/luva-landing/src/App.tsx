@@ -1,9 +1,10 @@
 import { useEffect } from "react";
+import { Switch, Route, Router as WouterRouter } from "wouter";
 import "./index.css";
+import ClaudeExtension from "./pages/ClaudeExtension";
 
-export default function App() {
+function Home() {
   useEffect(() => {
-    // ---- PARTICLES CANVAS ----
     const canvas = document.getElementById("particles") as HTMLCanvasElement;
     const ctx = canvas?.getContext("2d");
     let animId: number;
@@ -51,7 +52,6 @@ export default function App() {
   }, []);
 
   useEffect(() => {
-    // ---- AVATAR BG ----
     const av = document.getElementById("av") as HTMLElement;
     if (av) {
       av.style.backgroundImage = `url('https://luvadeaplicativo.com/Mockupsemfundo.png'),linear-gradient(140deg,#ff6b2b,#ff6767)`;
@@ -59,7 +59,6 @@ export default function App() {
   }, []);
 
   useEffect(() => {
-    // ---- SCROLL REVEAL ----
     const io = new IntersectionObserver(
       (entries) => {
         for (const e of entries) {
@@ -76,7 +75,6 @@ export default function App() {
   }, []);
 
   useEffect(() => {
-    // ---- SPARK WORDS ----
     const spawnWordSpark = (id: string) => {
       const el = document.getElementById(id);
       if (!el) return;
@@ -98,7 +96,6 @@ export default function App() {
       if (Math.random() > 0.5) spawnWordSpark("word-auto");
     }, 520);
 
-    // ---- SPARK MOCKUP ----
     const spawnMockupSpark = () => {
       const box = document.getElementById("mockupBox");
       if (!box) return;
@@ -124,7 +121,6 @@ export default function App() {
   }, []);
 
   useEffect(() => {
-    // ---- FLOATING VIEW NUMBERS ----
     const fx = document.getElementById("viewsFx");
     if (!fx) return;
     const nums = ["50K views", "13K views", "48.7K", "12.9K", "views", "50K", "13K"];
@@ -152,7 +148,6 @@ export default function App() {
       <div className="views-fx" id="viewsFx" aria-hidden="true" />
 
       <main>
-        {/* HERO */}
         <section id="hero">
           <div className="inner">
             <span className="tag reveal">sobre mim</span>
@@ -210,7 +205,6 @@ export default function App() {
           </div>
         </section>
 
-        {/* PRODUTO PRINCIPAL */}
         <section id="products">
           <div className="inner">
             <span className="tag reveal">produto principal</span>
@@ -238,7 +232,6 @@ export default function App() {
           </div>
         </section>
 
-        {/* OUTROS PROJETOS */}
         <section id="other-projects">
           <div className="inner">
             <span className="tag reveal">outros projetos</span>
@@ -250,22 +243,17 @@ export default function App() {
               <div className="card reveal">
                 <h3>Extensão do Claude</h3>
                 <p>Guia rápido para instalar e usar IA no navegador com execução prática.</p>
-                <a className="project-btn" href="https://luvadeaplicativo.com/claudeextension/" target="_blank" rel="noopener noreferrer">
-                  abrir extensão
-                </a>
+                <a className="project-btn" href="/claudeextension/">abrir extensão</a>
               </div>
               <div className="card reveal">
                 <h3>Controle o Claude pelo Celular</h3>
                 <p>Acesse seu setup de IA do celular, mantendo contexto e continuidade.</p>
-                <a className="project-btn" href="https://luvadeaplicativo.com/guiapage/" target="_blank" rel="noopener noreferrer">
-                  abrir guia
-                </a>
+                <a className="project-btn" href="https://luvadeaplicativo.com/guiapage/" target="_blank" rel="noopener noreferrer">abrir guia</a>
               </div>
             </div>
           </div>
         </section>
 
-        {/* REDES */}
         <section id="redes">
           <div className="inner">
             <span className="tag reveal">redes</span>
@@ -303,5 +291,17 @@ export default function App() {
         <p>© 2025 Luva de Aplicativo · Ramon Siqueira</p>
       </footer>
     </>
+  );
+}
+
+export default function App() {
+  return (
+    <WouterRouter>
+      <Switch>
+        <Route path="/claudeextension/" component={ClaudeExtension} />
+        <Route path="/claudeextension" component={ClaudeExtension} />
+        <Route component={Home} />
+      </Switch>
+    </WouterRouter>
   );
 }
