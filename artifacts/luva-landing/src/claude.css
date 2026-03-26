@@ -177,7 +177,7 @@
   font-family: inherit;
   font-size: 16px;
   font-weight: 800;
-  color: white;
+  color: black;
   cursor: pointer;
   letter-spacing: 0.01em;
   box-shadow: 0 4px 24px rgba(61,255,146,0.38);
@@ -254,7 +254,7 @@
   width: 32px; height: 32px;
   border-radius: 50%;
   background: #3DFF92;
-  color: white;
+  color: black;
   font-size: 13px;
   font-weight: 900;
   display: flex;
@@ -279,7 +279,7 @@
   display: inline-block;
   margin-top: 10px;
   background: #3DFF92;
-  color: white;
+  color: black;
   font-size: 14px;
   font-weight: 800;
   padding: 11px 20px;

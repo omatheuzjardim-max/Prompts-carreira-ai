@@ -286,32 +286,26 @@ export default function ListaViral() {
         <div className="hero-views-fx" id="hero-views-fx" aria-hidden="true" />
 
         <span className="hero-kicker">
-          Criadores de conteúdo · <span>Estratégia validada</span>
+          <span>+ 300 prompts</span>
         </span>
 
         <h1 className="hero-title">
-          <span className="hero-line">SE VIRALIZOU</span>
-          <span className="hero-line">NA <span className="r" id="lv-gringa-word">GRINGA</span></span>
-          <span className="hero-line">VIRALIZA</span>
-          <span className="hero-line">
-            NO <span className="hero-brasil">BRASIL</span><span className="hero-brasil-dot">•</span>
-          </span>
+          <span className="hero-line">PARE DE</span>
+          <span className="hero-line">IMPROVISAR COM</span>
+          <span className="hero-line"><span className="r" id="lv-gringa-word">IA NO TRABALHO</span></span>
         </h1>
 
         <p className="hero-urgency">
           <span className="urgency-inner">
-            Mas você precisa ser <span className="r" id="lv-shock-word">rápido</span> pra pegar essa oportunidade de crescer seu Instagram<span className="urgency-cursor">_</span>
+            300 prompts prontos para escrever melhor, responder com clareza, organizar demandas, gerar ideias e produzir mais no dia a dia. Use ChatGPT, Claude e outras IAs de forma mais <span className="r" id="lv-shock-word">prática</span>, rápida e inteligente — sem depender de tentativa e erro toda vez que abrir a tela.<span className="urgency-cursor">_</span>
           </span>
         </p>
 
-        <div className="scroll-cta" onClick={() => document.getElementById("lv-proof1wrap")?.scrollIntoView({ behavior: "smooth" })}>
-          <span className="scroll-cta-text">veja a prova</span>
-          <div className="scroll-chevrons">
-            <svg viewBox="0 0 36 22" fill="none"><polyline points="2,3 18,19 34,3" stroke="#3dff92" strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
-            <svg viewBox="0 0 36 22" fill="none"><polyline points="2,3 18,19 34,3" stroke="#3dff92" strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
-            <svg viewBox="0 0 36 22" fill="none"><polyline points="2,3 18,19 34,3" stroke="#3dff92" strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
-          </div>
-        </div>
+        <a href="#lv-price-anchor" className="btn reveal visible" style={{ marginTop: "40px", width: "auto" }}>
+          Quero acessar os 300 prompts
+        </a>
+
+
       </section>
 
       {/* ── PROOF 1 ── */}
@@ -335,9 +329,9 @@ export default function ListaViral() {
             </svg>
           </div>
           <div className="phone-card brasil">
-            <img src="https://luvadeaplicativo.com/listaviral/proof-brasil.png" alt="@luvadeaplicativo" />
+            <img src="https://luvadeaplicativo.com/listaviral/proof-brasil.png" alt="@mat.jardim" />
             <div className="phone-info">
-              <div className="handle">@luvadeaplicativo</div>
+              <div className="handle">@mat.jardim</div>
               <div className="views sparkle-red" data-target="200000" data-kind="k" data-suffix="/24h">200K/24h</div>
               <div className="sub">Modelado — BR 🇧🇷</div>
             </div>
@@ -372,9 +366,9 @@ export default function ListaViral() {
             </svg>
           </div>
           <div className="phone-card brasil">
-            <img src="https://luvadeaplicativo.com/listaviral/proof-brasil2.png" alt="@luvadeaplicativo 51k" />
+            <img src="https://luvadeaplicativo.com/listaviral/proof-brasil2.png" alt="@mat.jardim 51k" />
             <div className="phone-info">
-              <div className="handle">@luvadeaplicativo</div>
+              <div className="handle">@mat.jardim</div>
               <div className="views sparkle-red" data-target="51000" data-kind="k">51K</div>
               <div className="sub">Modelado — BR 🇧🇷</div>
             </div>
@@ -472,7 +466,7 @@ export default function ListaViral() {
 
             <div className="offer-mockup-wrap reveal">
               <div className="offer-mockup-glow" />
-              <img src="https://luvadeaplicativo.com/Mockupsemfundo.png" alt="Mockup Lista Viral" className="offer-mockup" />
+              <img src="/mockup.png" alt="Mockup Prompts Carreira AI" className="offer-mockup" />
             </div>
 
             <ul className="price-includes">
@@ -553,14 +547,14 @@ export default function ListaViral() {
               <div className="creator-ring" />
               <img
                 className="creator-photo"
-                src="https://luvadeaplicativo.com/listaviral/foto%20luva.png"
-                alt="Luva de Aplicativo"
+                src="/profile.png"
+                alt="Matheus Jardim"
                 onError={e => { (e.target as HTMLImageElement).style.display = "none"; }}
               />
             </div>
             <div>
-              <div className="creator-handle">@luvadeaplicativo</div>
-              <div className="creator-name">Ramon Siqueira</div>
+              <div className="creator-handle">@mat.jardim</div>
+              <div className="creator-name">Matheus Jardim</div>
               <p className="creator-bio">
                 Peguei um vídeo da gringa, copiei o formato, traduzi as falas
                 e bati <strong>200K de views em 24h</strong>. Esse material é o
@@ -605,7 +599,7 @@ export default function ListaViral() {
 
       <footer className="lv-footer">
         ✴·✴✧<br />
-        © 2025 Luva de Aplicativo · Ramon Siqueira
+        © 2025 Matheus Jardim
       </footer>
     </div>
   );

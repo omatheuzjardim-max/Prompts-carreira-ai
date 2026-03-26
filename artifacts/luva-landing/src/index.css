@@ -193,7 +193,7 @@ section{padding:62px 14px}
   display:inline-block;
   margin-top:24px;
   background:linear-gradient(135deg,var(--red),#3dff92);
-  color:#fff;
+  color:#000;
   font-family:'Space Mono',monospace;
   font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;
   text-decoration:none;
@@ -225,16 +225,23 @@ section{padding:62px 14px}
 .card h3{font-size:15px;font-weight:800;line-height:1.3;letter-spacing:-.01em}
 .card p{font-size:13px;color:var(--gray);line-height:1.6;flex:1}
 .project-btn{
-  display:inline-flex;align-items:center;gap:5px;
+  display:inline-flex;align-items:center;justify-content:center;
+  margin-top:14px;
+  background:var(--red);
+  color:#000;
   font-family:'Space Mono',monospace;
-  font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;
-  color:var(--red2);
+  font-size:11px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;
   text-decoration:none;
-  margin-top:4px;
-  transition:opacity .15s;
+  padding:12px 24px;
+  border-radius:12px;
+  box-shadow:0 0 16px var(--redDim);
+  transition:transform .15s, box-shadow .15s, filter .15s;
 }
-.project-btn::after{content:'→';font-size:13px}
-.project-btn:hover{opacity:.75}
+.project-btn:hover{
+  transform:translateY(-2px);
+  filter:brightness(1.08);
+  box-shadow: 0 0 24px var(--redGlow);
+}
 
 .media-grid{
   margin-top:20px;
@@ -258,7 +265,7 @@ section{padding:62px 14px}
   display:inline-flex;align-items:center;gap:5px;
   font-family:'Space Mono',monospace;
   font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;
-  color:var(--red2);margin-top:4px;
+  color:#000;margin-top:4px;
 }
 .media-btn::after{content:'↗';font-size:13px}
 

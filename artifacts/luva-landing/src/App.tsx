@@ -55,7 +55,7 @@ function Home() {
   useEffect(() => {
     const av = document.getElementById("av") as HTMLElement;
     if (av) {
-      av.style.backgroundImage = `url('https://luvadeaplicativo.com/Mockupsemfundo.png'),linear-gradient(140deg,#3dff92,#3dff92)`;
+      av.style.backgroundImage = `url('/profile.png'),linear-gradient(140deg,#3dff92,#3dff92)`;
     }
   }, []);
 
@@ -124,7 +124,16 @@ function Home() {
   useEffect(() => {
     const fx = document.getElementById("viewsFx");
     if (!fx) return;
-    const nums = ["50K views", "13K views", "48.7K", "12.9K", "views", "50K", "13K"];
+    const nums = [
+      "clareza",
+      "produtividade",
+      "qualidade das respostas",
+      "consistência no uso da IA",
+      "contexto",
+      "objetivo claro",
+      "material de apoio",
+      "restrições de formato"
+    ];
     const spawn = () => {
       const el = document.createElement("span");
       el.className = "view-num";
@@ -157,37 +166,21 @@ function Home() {
               <div className="avatar" id="av" />
             </div>
             <div className="handle reveal">
-              <span>@luvadeaplicativo</span>
+              <span>@mat.jardim</span>
               <svg width="17" height="17" viewBox="0 0 40 40" fill="none" aria-hidden="true">
                 <circle cx="20" cy="20" r="18" fill="#1D9BF0"/>
                 <path d="M28 14.5L17.5 25 12 19.5" stroke="white" strokeWidth="3.2" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
             </div>
-            <div className="name reveal">Ramon Siqueira</div>
+            <div className="name reveal">Matheus Jardim</div>
 
             <h1 className="title reveal">
-              criador de{" "}
+              Especialista em{" "}
               <span className="r spark-word" id="word-ia">ia</span>
               <br />
               e{" "}
-              <span className="r spark-word" id="word-auto">automação</span>
+              <span className="r spark-word" id="word-auto">Growth Mkt</span>
             </h1>
-            <p className="body reveal">
-              Criador focado em{" "}
-              <strong>IA, automação e estratégia de conteúdo</strong>.{" "}
-              Meu trabalho é transformar formato validado em resultado prático.
-            </p>
-
-            <div className="stats reveal">
-              <div className="stat">
-                <strong>4 mil</strong>
-                <span>seguidores</span>
-              </div>
-              <div className="stat">
-                <strong>1 ano e 6m+</strong>
-                <span>vivendo de internet</span>
-              </div>
-            </div>
 
             <a className="scroll-cta reveal" href="#products">
               <span>meus projetos</span>
@@ -210,25 +203,27 @@ function Home() {
           <div className="inner">
             <span className="tag reveal">produto principal</span>
             <h2 className="title reveal">
-              se viralizou<br />
-              na <span className="r">gringa</span><br />
-              viraliza<br />
-              no <span>brasil</span><span style={{color:"var(--white)"}}>•</span>
+              Os 300 Prompts que<br />
+              Vão <span className="r">Acelerar</span><br />
+              Sua carreira<span style={{color:"var(--white)"}}>•</span>
             </h2>
+            <p className="body reveal" style={{ marginTop: "16px", marginBottom: "24px" }}>
+              Tenha os prompts certos para escrever, responder, criar, organizar e vender com mais eficiência.
+            </p>
 
             <div className="product-showcase reveal">
               <div className="mockup-wrap" id="mockupBox">
                 <div className="mockup-aura" />
                 <img
-                  src="https://luvadeaplicativo.com/Mockupsemfundo.png"
+                  src="/mockup.png"
                   className="mockup-media"
-                  alt="Mockup Lista Viral"
+                  alt="Mockup Prompts Carreira AI"
                 />
               </div>
             </div>
 
-            <a className="cta reveal" href="/listaviral/">
-              entrar no listaviral
+            <a className="cta reveal" href="/prompt-carreira-ai/">
+              acessar os prompts
             </a>
           </div>
         </section>
@@ -247,49 +242,17 @@ function Home() {
                 <a className="project-btn" href="/claudeextension/">abrir extensão</a>
               </div>
               <div className="card reveal">
-                <h3>Controle o Claude pelo Celular</h3>
+                <h3>Acesse pelo Celular</h3>
                 <p>Acesse seu setup de IA do celular, mantendo contexto e continuidade.</p>
-                <a className="project-btn" href="https://luvadeaplicativo.com/guiapage/" target="_blank" rel="noopener noreferrer">abrir guia</a>
+                <a className="project-btn" href="/prompt-carreira-ai/">abrir guia</a>
               </div>
-            </div>
-          </div>
-        </section>
-
-        <section id="redes">
-          <div className="inner">
-            <span className="tag reveal">redes</span>
-            <h2 className="title reveal">
-              me acompanhe no<br />
-              <span className="r">instagram</span> e <span className="r">youtube</span>
-            </h2>
-            <div className="media-grid">
-              <a
-                className="media-card reveal"
-                href="https://instagram.com/luvadeaplicativo"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <h3>Instagram</h3>
-                <p>Reels, bastidores e conteúdo prático de IA, automação e crescimento.</p>
-                <span className="media-btn">abrir perfil</span>
-              </a>
-              <a
-                className="media-card reveal"
-                href="https://youtube.com/@luvadeaplicativo"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <h3>YouTube</h3>
-                <p>Vídeos completos com execução real e estratégia aplicada no dia a dia.</p>
-                <span className="media-btn">ver canal</span>
-              </a>
             </div>
           </div>
         </section>
       </main>
 
       <footer>
-        <p>© 2025 Luva de Aplicativo · Ramon Siqueira</p>
+        <p>© 2025 Matheus Jardim</p>
       </footer>
     </>
   );
@@ -301,8 +264,8 @@ export default function App() {
       <Switch>
         <Route path="/claudeextension/" component={ClaudeExtension} />
         <Route path="/claudeextension" component={ClaudeExtension} />
-        <Route path="/listaviral/" component={ListaViral} />
-        <Route path="/listaviral" component={ListaViral} />
+        <Route path="/prompt-carreira-ai/" component={ListaViral} />
+        <Route path="/prompt-carreira-ai" component={ListaViral} />
         <Route component={Home} />
       </Switch>
     </WouterRouter>

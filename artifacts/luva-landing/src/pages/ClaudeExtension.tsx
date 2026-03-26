@@ -11,7 +11,7 @@ export default function ClaudeExtension() {
   useEffect(() => {
     const av = document.getElementById("ce-av") as HTMLElement;
     if (av) {
-      av.style.backgroundImage = `url('https://luvadeaplicativo.com/foto luva.png'),linear-gradient(135deg,#3DFF92,#3DFF92)`;
+      av.style.backgroundImage = `url('/profile.png'),linear-gradient(135deg,#3DFF92,#3DFF92)`;
     }
   }, []);
 
@@ -59,7 +59,7 @@ export default function ClaudeExtension() {
         <div className="ce-profile">
           <div className="ce-avatar" id="ce-av" />
           <div className="ce-handle-row">
-            <span className="ce-handle-text">@luvadeaplicativo</span>
+            <span className="ce-handle-text">@mat.jardim</span>
             <span className="ce-badge">
               <svg width="16" height="16" viewBox="0 0 40 40" fill="none">
                 <circle cx="20" cy="20" r="18" fill="#1D9BF0"/>
@@ -67,9 +67,7 @@ export default function ClaudeExtension() {
               </svg>
             </span>
           </div>
-          <span className="ce-tagline">
-            Criador de conteúdo sobre IA e automação. Dono de canais no YouTube, criador de aplicativos e vivendo 100% de internet há 1 ano e 6 meses.
-          </span>
+
         </div>
 
         {/* Divisor */}
