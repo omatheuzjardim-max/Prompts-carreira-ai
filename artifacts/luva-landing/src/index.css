@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap');
 
 :root{
-  --red:#ff6b2b;
-  --red2:#ff8a4d;
-  --redGlow:rgba(255,107,43,.65);
-  --redDim:rgba(255,107,43,.1);
+  --red:#3dff92;
+  --red2:#3dff92;
+  --redGlow:rgba(61,255,146,.65);
+  --redDim:rgba(61,255,146,.1);
   --white:#fff;
   --off:#f0ede9;
   --gray:#93a0ad;
@@ -25,13 +25,13 @@ body{
 .grid-bg{
   position:fixed;inset:0;z-index:0;pointer-events:none;
   background-image:
-    linear-gradient(rgba(255,107,43,.08) 1px,transparent 1px),
-    linear-gradient(90deg,rgba(255,107,43,.08) 1px,transparent 1px);
+    linear-gradient(rgba(61,255,146,.08) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(61,255,146,.08) 1px,transparent 1px);
   background-size:50px 50px;
 }
 .grid-bg::after{
   content:'';position:absolute;inset:0;
-  background:radial-gradient(ellipse 72% 44% at 50% 0%,rgba(255,107,43,.13) 0%,transparent 70%);
+  background:radial-gradient(ellipse 72% 44% at 50% 0%,rgba(61,255,146,.13) 0%,transparent 70%);
 }
 #particles{position:fixed;inset:0;z-index:0;pointer-events:none;filter:blur(1.5px)}
 .particles-dim{
@@ -50,7 +50,7 @@ body{
   font-size:clamp(10px,2vw,14px);
   font-weight:700;
   color:rgba(255,255,255,.74);
-  text-shadow:0 0 8px rgba(255,255,255,.25),0 0 15px rgba(255,107,43,.25);
+  text-shadow:0 0 8px rgba(255,255,255,.25),0 0 15px rgba(61,255,146,.25);
   letter-spacing:.07em;
   animation:view-rise linear forwards;
 }
@@ -71,7 +71,7 @@ section{padding:62px 14px}
   font-family:'Space Mono',monospace;
   font-size:10px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;
   color:var(--red2);
-  border:1px solid rgba(255,107,43,.28);
+  border:1px solid rgba(61,255,146,.28);
   background:var(--redDim);
   border-radius:999px;
   padding:6px 12px;
@@ -87,7 +87,7 @@ section{padding:62px 14px}
 }
 .title .r{
   color:var(--red2);
-  text-shadow:0 0 24px var(--redGlow),0 0 62px rgba(255,107,43,.24);
+  text-shadow:0 0 24px var(--redGlow),0 0 62px rgba(61,255,146,.24);
 }
 .body{
   margin-top:12px;
@@ -107,7 +107,7 @@ section{padding:62px 14px}
 .avatar-wrap{width:102px;height:102px;margin:14px auto 10px;position:relative}
 .avatar-ring{
   position:absolute;inset:-4px;border-radius:50%;
-  background:conic-gradient(var(--red) 0%,rgba(255,107,43,.18) 45%,var(--red2) 100%);
+  background:conic-gradient(var(--red) 0%,rgba(61,255,146,.18) 45%,var(--red2) 100%);
   animation:ring-spin 4s linear infinite;
   box-shadow:0 0 22px var(--redGlow);
 }
@@ -115,7 +115,7 @@ section{padding:62px 14px}
 @keyframes ring-spin{from{transform:rotate(0)}to{transform:rotate(360deg)}}
 .avatar{
   width:100%;height:100%;border-radius:50%;
-  background:center 12%/cover no-repeat,linear-gradient(140deg,var(--red),#ff6767);
+  background:center 12%/cover no-repeat,linear-gradient(140deg,var(--red),#3dff92);
   position:relative;z-index:2;
 }
 .handle{
@@ -158,11 +158,11 @@ section{padding:62px 14px}
 .scroll-cta span{
   font-family:'Space Mono',monospace;
   font-size:12px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:#c2cad3;
-  text-shadow:0 0 14px rgba(255,107,43,.45),0 0 28px rgba(255,107,43,.25);
+  text-shadow:0 0 14px rgba(61,255,146,.45),0 0 28px rgba(61,255,146,.25);
 }
 .chevrons svg{
   width:50px;height:30px;display:block;
-  filter:drop-shadow(0 0 10px rgba(255,107,43,.8));
+  filter:drop-shadow(0 0 10px rgba(61,255,146,.8));
 }
 
 .product-showcase{margin-top:16px;}
@@ -173,14 +173,14 @@ section{padding:62px 14px}
 }
 .mockup-aura{
   position:absolute;left:10%;right:10%;bottom:-16px;height:90px;
-  background:radial-gradient(ellipse,rgba(255,107,43,.3) 0%,transparent 70%);
+  background:radial-gradient(ellipse,rgba(61,255,146,.3) 0%,transparent 70%);
   filter:blur(10px);
   z-index:1;
 }
 .mockup-media{
   width:100%;height:auto;display:block;position:relative;z-index:2;
   transform-origin:center center;
-  filter:drop-shadow(0 0 16px rgba(255,107,43,.25)) drop-shadow(0 18px 42px rgba(0,0,0,.68));
+  filter:drop-shadow(0 0 16px rgba(61,255,146,.25)) drop-shadow(0 18px 42px rgba(0,0,0,.68));
   animation:float-mockup 6.8s cubic-bezier(.42,0,.2,1) infinite;
 }
 @keyframes float-mockup{
@@ -192,19 +192,19 @@ section{padding:62px 14px}
 .cta{
   display:inline-block;
   margin-top:24px;
-  background:linear-gradient(135deg,var(--red),#ff4500);
+  background:linear-gradient(135deg,var(--red),#3dff92);
   color:#fff;
   font-family:'Space Mono',monospace;
   font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;
   text-decoration:none;
   padding:14px 32px;
   border-radius:999px;
-  box-shadow:0 0 22px var(--redGlow),0 0 55px rgba(255,107,43,.18);
+  box-shadow:0 0 22px var(--redGlow),0 0 55px rgba(61,255,146,.18);
   transition:transform .18s,box-shadow .18s;
 }
 .cta:hover{
   transform:translateY(-2px) scale(1.03);
-  box-shadow:0 0 34px var(--redGlow),0 0 80px rgba(255,107,43,.22);
+  box-shadow:0 0 34px var(--redGlow),0 0 80px rgba(61,255,146,.22);
 }
 
 .cards{
@@ -221,7 +221,7 @@ section{padding:62px 14px}
   display:flex;flex-direction:column;gap:8px;
   transition:border-color .2s,background .2s;
 }
-.card:hover{border-color:rgba(255,107,43,.35);background:rgba(255,107,43,.04)}
+.card:hover{border-color:rgba(61,255,146,.35);background:rgba(61,255,146,.04)}
 .card h3{font-size:15px;font-weight:800;line-height:1.3;letter-spacing:-.01em}
 .card p{font-size:13px;color:var(--gray);line-height:1.6;flex:1}
 .project-btn{
@@ -251,7 +251,7 @@ section{padding:62px 14px}
   text-align:left;
   transition:border-color .2s,background .2s;
 }
-.media-card:hover{border-color:rgba(255,107,43,.35);background:rgba(255,107,43,.04)}
+.media-card:hover{border-color:rgba(61,255,146,.35);background:rgba(61,255,146,.04)}
 .media-card h3{font-size:17px;font-weight:900;letter-spacing:-.02em}
 .media-card p{font-size:13px;color:var(--gray);line-height:1.6;flex:1}
 .media-btn{

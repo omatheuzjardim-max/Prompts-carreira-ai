@@ -28,7 +28,7 @@ function Home() {
         for (const p of particles) {
           ctx.beginPath();
           ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
-          ctx.fillStyle = `rgba(255,107,43,${p.a})`;
+          ctx.fillStyle = `rgba(61,255,146,${p.a})`;
           ctx.fill();
           p.x += p.vx;
           p.y += p.vy;
@@ -55,7 +55,7 @@ function Home() {
   useEffect(() => {
     const av = document.getElementById("av") as HTMLElement;
     if (av) {
-      av.style.backgroundImage = `url('https://luvadeaplicativo.com/Mockupsemfundo.png'),linear-gradient(140deg,#ff6b2b,#ff6767)`;
+      av.style.backgroundImage = `url('https://luvadeaplicativo.com/Mockupsemfundo.png'),linear-gradient(140deg,#3dff92,#3dff92)`;
     }
   }, []);
 
@@ -87,7 +87,7 @@ function Home() {
       const dx = (Math.random() - 0.5) * 40;
       const dy = -(10 + Math.random() * 35);
       const size = 1.2 + Math.random() * 2.5;
-      const color = Math.random() > 0.5 ? "#ff8a4d" : "#ffffff";
+      const color = Math.random() > 0.5 ? "#3dff92" : "#ffffff";
       s.style.cssText = `left:${x}px;top:${y}px;width:${size}px;height:${size}px;background:${color};box-shadow:0 0 6px ${color},0 0 12px ${color};--dx:${dx}px;--dy:${dy}px;`;
       document.body.appendChild(s);
       setTimeout(() => s.remove(), 520);
@@ -109,7 +109,7 @@ function Home() {
       const dy = -(35 + Math.random() * 95);
       const size = 1.4 + Math.random() * 4.4;
       const dur = 640 + Math.random() * 680;
-      s.style.cssText = `left:${x}px;top:${y}px;width:${size}px;height:${size}px;background:#ff8a4d;box-shadow:0 0 10px rgba(255,107,43,.85),0 0 20px rgba(255,107,43,.55);--dx:${dx}px;--dy:${dy}px;animation-duration:${dur}ms;`;
+      s.style.cssText = `left:${x}px;top:${y}px;width:${size}px;height:${size}px;background:#3dff92;box-shadow:0 0 10px rgba(61,255,146,.85),0 0 20px rgba(61,255,146,.55);--dx:${dx}px;--dy:${dy}px;animation-duration:${dur}ms;`;
       document.body.appendChild(s);
       setTimeout(() => s.remove(), dur);
     };
@@ -193,13 +193,13 @@ function Home() {
               <span>meus projetos</span>
               <div className="chevrons">
                 <svg viewBox="0 0 36 22" fill="none">
-                  <polyline points="2,3 18,19 34,3" stroke="#ff6b2b" strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round"/>
+                  <polyline points="2,3 18,19 34,3" stroke="#3dff92" strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
                 <svg viewBox="0 0 36 22" fill="none">
-                  <polyline points="2,3 18,19 34,3" stroke="#ff6b2b" strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round" opacity=".82"/>
+                  <polyline points="2,3 18,19 34,3" stroke="#3dff92" strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round" opacity=".82"/>
                 </svg>
                 <svg viewBox="0 0 36 22" fill="none">
-                  <polyline points="2,3 18,19 34,3" stroke="#ff6b2b" strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round" opacity=".64"/>
+                  <polyline points="2,3 18,19 34,3" stroke="#3dff92" strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round" opacity=".64"/>
                 </svg>
               </div>
             </a>

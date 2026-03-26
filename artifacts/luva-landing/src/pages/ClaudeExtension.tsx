@@ -11,7 +11,7 @@ export default function ClaudeExtension() {
   useEffect(() => {
     const av = document.getElementById("ce-av") as HTMLElement;
     if (av) {
-      av.style.backgroundImage = `url('https://luvadeaplicativo.com/foto luva.png'),linear-gradient(135deg,#FF6B2B,#FF9D77)`;
+      av.style.backgroundImage = `url('https://luvadeaplicativo.com/foto luva.png'),linear-gradient(135deg,#3DFF92,#3DFF92)`;
     }
   }, []);
 
@@ -99,7 +99,7 @@ export default function ClaudeExtension() {
               onFocus={handleFocus}
               onBlur={handleBlur}
               className={shake ? "ce-shake" : ""}
-              style={shake ? { borderColor: "rgba(255,107,43,0.6)" } : {}}
+              style={shake ? { borderColor: "rgba(61,255,146,0.6)" } : {}}
             />
             <button className="ce-btn" onClick={go} disabled={loading}>
               {loading ? "Um segundo…" : "Quero saber →"}

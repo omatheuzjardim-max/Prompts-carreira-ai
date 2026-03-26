@@ -80,7 +80,7 @@ export default function ListaViral() {
             if (d < 140) {
               const alpha = .32 * (1 - d / 140);
               ctx.beginPath(); ctx.moveTo(a.x, a.y); ctx.lineTo(b.x, b.y);
-              ctx.strokeStyle = `rgba(224,17,17,${alpha})`; ctx.lineWidth = .8; ctx.stroke();
+              ctx.strokeStyle = `rgba(61,255,146,${alpha})`; ctx.lineWidth = .8; ctx.stroke();
             }
           }
         }
@@ -91,12 +91,12 @@ export default function ListaViral() {
         if (p.y < 0) p.y = H; if (p.y > H) p.y = 0;
         const glow = .5 + .5 * Math.sin(p.pulse);
         const g = ctx.createRadialGradient(p.x, p.y, 0, p.x, p.y, p.r * 5);
-        g.addColorStop(0, `rgba(224,17,17,${.5 * glow})`);
-        g.addColorStop(1, "rgba(224,17,17,0)");
+        g.addColorStop(0, `rgba(61,255,146,${.5 * glow})`);
+        g.addColorStop(1, "rgba(61,255,146,0)");
         ctx.beginPath(); ctx.arc(p.x, p.y, p.r * 5, 0, Math.PI * 2);
         ctx.fillStyle = g; ctx.fill();
         ctx.beginPath(); ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
-        ctx.fillStyle = `rgba(255,60,60,${.7 + .3 * glow})`; ctx.fill();
+        ctx.fillStyle = `rgba(61,255,146,${.7 + .3 * glow})`; ctx.fill();
       });
       animId = requestAnimationFrame(draw);
     }
@@ -174,7 +174,7 @@ export default function ListaViral() {
   useEffect(() => {
     const word = document.getElementById("lv-shock-word");
     if (!word) return;
-    const COLORS = ["#ff2020", "#ff6060", "#ffffff", "#ff0000", "#ffaaaa"];
+    const COLORS = ["#3dff92", "#3dff92", "#ffffff", "#3dff92", "#3dff92"];
     const isMobile = window.matchMedia("(max-width:900px)").matches;
     function spawnSparks() {
       if (document.hidden) return;
@@ -307,9 +307,9 @@ export default function ListaViral() {
         <div className="scroll-cta" onClick={() => document.getElementById("lv-proof1wrap")?.scrollIntoView({ behavior: "smooth" })}>
           <span className="scroll-cta-text">veja a prova</span>
           <div className="scroll-chevrons">
-            <svg viewBox="0 0 36 22" fill="none"><polyline points="2,3 18,19 34,3" stroke="#e01111" strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
-            <svg viewBox="0 0 36 22" fill="none"><polyline points="2,3 18,19 34,3" stroke="#e01111" strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
-            <svg viewBox="0 0 36 22" fill="none"><polyline points="2,3 18,19 34,3" stroke="#e01111" strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
+            <svg viewBox="0 0 36 22" fill="none"><polyline points="2,3 18,19 34,3" stroke="#3dff92" strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
+            <svg viewBox="0 0 36 22" fill="none"><polyline points="2,3 18,19 34,3" stroke="#3dff92" strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
+            <svg viewBox="0 0 36 22" fill="none"><polyline points="2,3 18,19 34,3" stroke="#3dff92" strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
           </div>
         </div>
       </section>
